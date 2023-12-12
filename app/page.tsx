@@ -1,8 +1,8 @@
-import Image from "next/image";
 import ThemeSwitch from "@/components/theme-switch";
-import { generalData } from "@/data/general";
-import { contentData } from "@/data/content";
 import type { Content } from "@/data/content";
+import { contentData } from "@/data/content";
+import { generalData } from "@/data/general";
+import Image from "next/image";
 
 type ContentProps = Content;
 
@@ -14,7 +14,7 @@ const Content: React.FC<ContentProps> = ({ title, items }) => {
         {items.map((item, index) => {
           return (
             <div className="flex" key={index}>
-              <div className="mr-8 max-w-[100px] w-full text-slate-400 dark:text-slate-400">
+              <div className="mr-8 max-w-[100px] w-full text-slate-400 dark:text-slate-400 whitespace-pre-wrap">
                 {item.date}
               </div>
               <div className="flex flex-col flex-1">
@@ -23,7 +23,7 @@ const Content: React.FC<ContentProps> = ({ title, items }) => {
                   {item.subTitle}
                 </p>
                 {item.description ? (
-                  <p className="text-slate-600 dark:text-gray-400 mt-2">
+                  <p className="text-slate-600 dark:text-gray-400 mt-2 whitespace-pre-wrap">
                     {item.description}
                   </p>
                 ) : null}
@@ -74,14 +74,14 @@ export default function Home() {
         <section className="my-9 text-sm">
           <h3 className="mb-1 text-slate-900 dark:text-slate-100">About</h3>
           <div className="text-slate-600 dark:text-slate-300">
-            <p>{generalData.about}</p>
+            <p className="whitespace-pre-wrap">{generalData.about}</p>
           </div>
         </section>
         {contentData.map((content, index) => {
           return <Content {...content} key={index} />;
         })}
         <section className="my-14 text-sm">
-          <h3 className="mb-6 text-slate-900">Contact</h3>
+          <h3 className="mb-6 text-slate-900 dark:text-slate-100">Contact</h3>
           <div className="flex flex-col gap-6">
             {generalData.contacts.map((contact, index) => {
               return (
