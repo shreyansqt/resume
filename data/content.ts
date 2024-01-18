@@ -69,7 +69,7 @@ export const contentData = [
         title: "Freelance Front End Developer",
         subTitle: "YourStory Media Pvt. Ltd., Remote (while exploring India)",
         date: `Feb 2015 - Jun 2015
-1 yr 3 mos`,
+5 mos`,
         description: `- Developed a multi-lingual user-curated stories web app using HTML5, SASS, Bootstrap3,jQuery & jQuery plugins
 - Created a single page responsive website using HTML5, SASS & Bootstrap 3
 
@@ -79,8 +79,8 @@ export const contentData = [
         title: "Web Designer & Developer",
         subTitle:
           "Pipemonk (formerly ZapStitch) Technologies Pvt. Ltd., Bangalore, India",
-        date: `Feb 2015 - Jun 2015
-1 yr 3 mos`,
+        date: `Jul 2014 - Dec 2014
+6 mos`,
         description: `- Designed conversion-centric website & landing pages. Converted them to code using HTML5, CSS3 & Bootstrap 3
 - Designed a user-centric web app with focus on reduced clicks for creating an integration between 2 SAAS apps. Developed the same using HTML5, SASS & jQuery
 
