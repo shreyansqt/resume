@@ -24,7 +24,7 @@ Currently, I am looking for a frontend contract role with Vue 3 or React as base
     {
       label: "GitHub",
       value: "shreyansqt",
-      href: "https://github.com/ibelick",
+      href: "https://github.com/shreyansqt",
     },
     {
       label: "LinkedIn",
